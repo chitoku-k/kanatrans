@@ -2,6 +2,20 @@
 
 This is a web application that converts an English word to Katakana.
 
+> [!TIP]
+> This repository is a fork of [hexium310/kanatrans](https://github.com/hexium310/kanatrans) containing Windows-specific patches.
+>
+> In order to install this fork on Windows, install the requirements:
+>
+> * [MinGW-w64](https://www.mingw-w64.org/)
+> * [rustup](https://rustup.rs/) with the x86\_64-pc-windows-gnu target
+>
+> and run the following on Bash:
+>
+> ```console
+> $ cargo install --git https://github.com/chitoku-k/kanatrans --tag=kanatrans/0.2.4-windows --features=vendored --target=x86_64-pc-windows-gnu
+> ```
+
 ## Dependency
 
 - [flite](https://github.com/festvox/flite)
